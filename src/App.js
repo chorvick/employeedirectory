@@ -1,14 +1,16 @@
-
+import React from "react";
+import Header from "./components/Header";
+import EmployeesContainer from "./components/Container/EmployeeContainer";
 // import './App.css';
 
-function App() {
+const App = () => {
   return (
+    <>
+      <Header />
+      <EmployeesContainer />
+    </>
+  );
+};
 
-    <h1> hi there </h1>
-  )
-
-
-
-}
 
 export default App;
