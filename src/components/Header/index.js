@@ -7,7 +7,7 @@ const Header = () => {
         <header>
             <h1 className="text-center">New Employee Directory</h1>
             <p className="text-center">
-                Click to filter
+                Click on email or phone number to filter the list
       </p>
         </header>
     );

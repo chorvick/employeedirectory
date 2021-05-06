@@ -69,8 +69,15 @@ class EmployeeContainer extends Component {
                 a = a[key];
                 b = b[key];
 
-            });
+                if (primary) {
+                    if (secondary && a[primary] === b[primary]) {
+                    }
+                    return a[primary.localeCompare(b[primary])];
+                } else {
 
+                    return a.localeCompare(b);
+                }
+            })
             this.setState({
                 filteredEmployees: sortedEmployees,
 
