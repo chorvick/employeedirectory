@@ -1,20 +1,9 @@
-import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
+const express = require('express')
+const path = require('path');
 
+const app = express()
+const port = process.env.PORT || 3000 // Heroku will need the PORT environment variable
 
+app.use(express.static(path.join(__dirname, 'build')));
 
-
-
-function App() {
-    return (
-        <div className="App"> </div>
-
-
-
-
-    );
-}
-
-
-export default App;
+app.listen(port, () => console.log(`App is live on port ${port}!`))c
